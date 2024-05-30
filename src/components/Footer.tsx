@@ -24,6 +24,7 @@ import {
 } from "react-icons/fa";
 import CenteredBox from "../styles/BoxStyles";
 import LinkItem from "../LinkItem";
+import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
   const bgColor = useBreakpointValue({
@@ -31,13 +32,6 @@ const Footer = () => {
     md: useColorModeValue("gray.100", "gray.700")
   });
 
-  const socialLinks = [
-    { href: "https://github.com/MatejGHub", icon: <FaGithub /> },
-    {
-      href: "https://www.linkedin.com/in/matej-%C5%A1tremfelj-ba9136283/",
-      icon: <FaLinkedin />
-    }
-  ];
   return (
     <>
       <HStack
@@ -49,13 +43,7 @@ const Footer = () => {
       >
         <Text>© 2024 Matej Štremfelj, Inc. All rights reserved.</Text>
         <HStack>
-          {socialLinks.map((link, id) => {
-            return (
-              <LinkItem key={id} href={link.href}>
-                {React.cloneElement(link.icon, { fontSize: "25px" })}{" "}
-              </LinkItem>
-            );
-          })}
+          <SocialLinks />
         </HStack>
       </HStack>
     </>

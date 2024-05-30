@@ -9,25 +9,17 @@ import {
   useMediaQuery
 } from "@chakra-ui/react";
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaLocationDot, FaDownload } from "react-icons/fa6";
 import AnimatedUnderline from "../styles/AnimatedUnderline";
 import LinkItem from "../LinkItem";
 import useIsMobile from "../hooks/useIsMobile";
+import SocialLinks from "./SocialLinks";
 
 const ContactGeneral = () => {
   const isMobile = useIsMobile(); // Checks if user is on mobile device
   const { colorMode } = useColorMode();
   const [isLargerThanMD] = useMediaQuery("(min-width: 778px)");
   const [isLargerThanSM] = useMediaQuery("(min-width: 500px)");
-
-  const socialLinks = [
-    { href: "https://github.com/MatejGHub", icon: <FaGithub /> },
-    {
-      href: "https://www.linkedin.com/in/matej-%C5%A1tremfelj-ba9136283/",
-      icon: <FaLinkedin />
-    }
-  ];
 
   return (
     <>
@@ -59,15 +51,7 @@ const ContactGeneral = () => {
           )}
         </HStack>
         <HStack marginBottom={3} gap={4}>
-          {/*  */}
-
-          {socialLinks.map((link, id) => {
-            return (
-              <LinkItem key={id} href={link.href}>
-                {React.cloneElement(link.icon, { fontSize: "35px" })}{" "}
-              </LinkItem>
-            );
-          })}
+          <SocialLinks />
         </HStack>
         <Divider />
         <HStack fontSize="lg" marginY={3}>

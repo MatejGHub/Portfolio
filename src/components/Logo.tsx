@@ -1,24 +1,19 @@
-import {
-  Box,
-  HStack,
-  Heading,
-  Image,
-  useBreakpointValue
-} from "@chakra-ui/react";
+import { Box, HStack, Heading, useBreakpointValue } from "@chakra-ui/react";
 import { PiGitlabLogoSimpleFill } from "react-icons/pi";
 
 import React from "react";
+import useResponsive from "../hooks/useResponsive";
 
 const Logo = () => {
-  const isSmallScreen = useBreakpointValue({ base: false, sm: true });
+  const { isLargerThanSM } = useResponsive();
 
   return (
     <HStack>
       <Box
         as={PiGitlabLogoSimpleFill}
-        fontSize={isSmallScreen ? "50px" : "30px"}
+        fontSize={isLargerThanSM ? "50px" : "30px"}
       />
-      <Heading as="h1" size={isSmallScreen ? "xl" : "lg"} fontWeight="bold">
+      <Heading as="h1" size={isLargerThanSM ? "xl" : "lg"} fontWeight="bold">
         Portfolio
       </Heading>
     </HStack>

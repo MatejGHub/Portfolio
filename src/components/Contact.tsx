@@ -9,10 +9,10 @@ import {
 import React from "react";
 import ContactGeneral from "./ContactGeneral";
 import ContactMessageMe from "./ContactMessageMe";
+import useResponsive from "../hooks/useResponsive";
 
 const Contact = () => {
-  const [isLargerThanMD] = useMediaQuery("(min-width: 778px)");
-  const [isLargerThanSM] = useMediaQuery("(min-width: 500px)");
+  const { isLargerThanMD, isLargerThanSM } = useResponsive();
   return (
     <>
       <Box textAlign={"center"} marginY={"40px"}>

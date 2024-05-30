@@ -1,9 +1,7 @@
-import { SimpleGrid, useColorMode, Button } from "@chakra-ui/react";
+import { SimpleGrid, Button } from "@chakra-ui/react";
 import React from "react";
 
 const HeroSkipToContent = () => {
-  const { colorMode } = useColorMode();
-  const bgColor = colorMode === "light" ? "black" : "white";
   const columns = { base: 1, md: 3 };
 
   return (

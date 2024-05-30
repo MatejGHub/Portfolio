@@ -7,21 +7,20 @@ import {
   MenuButton,
   MenuList,
   Button,
-  Box,
   MenuItem
 } from "@chakra-ui/react";
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useBreakpointValue } from "@chakra-ui/react";
+import useResponsive from "../hooks/useResponsive";
 
 const MenuItems = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const isLargeScreen = useBreakpointValue({ base: false, lg: true });
-  const isSmallScreen = useBreakpointValue({ base: false, sm: true });
+
+  const { isLargerThanSM, isLargerThanMD } = useResponsive();
 
   return (
     <HStack>
-      {isLargeScreen ? (
+      {isLargerThanMD ? (
         <>
           <Switch
             colorScheme="green"
@@ -36,7 +35,7 @@ const MenuItems = () => {
       ) : (
         <Menu>
           <MenuButton as={Button}>
-            <RxHamburgerMenu fontSize={isSmallScreen ? "35px" : "20px"} />
+            <RxHamburgerMenu fontSize={isLargerThanSM ? "35px" : "20px"} />
           </MenuButton>
           <MenuList>
             <MenuItem>

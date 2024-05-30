@@ -7,6 +7,7 @@ import {
 } from "@chakra-ui/react";
 import Logo from "./Logo";
 import MenuItems from "./MenuItems";
+import useResponsive from "../hooks/useResponsive";
 
 const NavBar = () => {
   const bgColor = useBreakpointValue({
@@ -14,7 +15,7 @@ const NavBar = () => {
     md: useColorModeValue("gray.100", "gray.700")
   });
 
-  const isMediumScreen = useBreakpointValue({ base: false, md: true });
+  const { isLargerThanSM } = useResponsive();
 
   return (
     <Box
@@ -25,12 +26,12 @@ const NavBar = () => {
       bg={bgColor}
       position={"sticky"}
       top={5}
-      m={isMediumScreen ? 5 : 2}
-      padding={isMediumScreen ? 2 : 0}
+      m={isLargerThanSM ? 5 : 2}
+      padding={isLargerThanSM ? 2 : 0}
     >
       <HStack
         justifyContent={"space-between"}
-        paddingX={isMediumScreen ? 5 : 0}
+        paddingX={isLargerThanSM ? 5 : 0}
       >
         <Logo />
         <MenuItems />

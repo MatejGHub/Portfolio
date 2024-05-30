@@ -16,7 +16,7 @@ const SocialLinks = () => {
       {socialLinks.map((link, id) => {
         return (
           <LinkItem key={id} href={link.href}>
-            {React.cloneElement(link.icon, { fontSize: "25px" })}{" "}
+            {React.cloneElement(link.icon, { fontSize: "35px" })}{" "}
           </LinkItem>
         );
       })}

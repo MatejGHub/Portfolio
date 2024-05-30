@@ -1,29 +1,11 @@
 import {
-  Box,
-  Button,
   HStack,
-  Link,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalHeader,
-  ModalOverlay,
   Text,
   useBreakpointValue,
-  useColorModeValue,
-  useDisclosure
+  useColorModeValue
 } from "@chakra-ui/react";
 import React from "react";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaEnvelope,
-  FaFileDownload,
-  FaLink
-} from "react-icons/fa";
-import CenteredBox from "../styles/BoxStyles";
-import LinkItem from "../LinkItem";
+
 import SocialLinks from "./SocialLinks";
 
 const Footer = () => {

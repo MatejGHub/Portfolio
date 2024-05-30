@@ -14,12 +14,12 @@ import AnimatedUnderline from "../styles/AnimatedUnderline";
 import LinkItem from "../LinkItem";
 import useIsMobile from "../hooks/useIsMobile";
 import SocialLinks from "./SocialLinks";
+import useResponsive from "../hooks/useResponsive";
 
 const ContactGeneral = () => {
   const isMobile = useIsMobile(); // Checks if user is on mobile device
   const { colorMode } = useColorMode();
-  const [isLargerThanMD] = useMediaQuery("(min-width: 778px)");
-  const [isLargerThanSM] = useMediaQuery("(min-width: 500px)");
+  const { isLargerThanMD, isLargerThanSM } = useResponsive();
 
   return (
     <>
@@ -61,7 +61,7 @@ const ContactGeneral = () => {
           <AnimatedUnderline>Volča, Slovenia - Open to work</AnimatedUnderline>
         </HStack>
         <Divider />
-        <HStack marginTop={3}>
+        <HStack marginTop={4}>
           <FaDownload fontSize="30px" />
           <Link
             href="https://docs.google.com/document/d/1-NNsdX8HrvpSZbZnAF_cgoUGcTZuk4L2oVk3FCGouzk/export?format=pdf"

@@ -6,7 +6,7 @@ const config: ThemeConfig = {
 };
 
 const colors = {
-  brand: {
+  gray: {
     50: "#f2f2f2",
     100: "#d9d9d9",
     200: "#bfbfbf",

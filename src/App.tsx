@@ -4,8 +4,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import CenteredBox from "./styles/BoxStyles"; //Styles to center the content
-
-// Finished with navbar for now. You will add extra later. Now focus on the hero section what you want to place in it?
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -14,7 +13,10 @@ function App() {
         templateAreas={`
         "nav nav nav"
         "hero hero hero"
-        "main main main"
+        "projects projects projects"
+        "credentials credentials credentials"
+        "about about about"
+        "contact contact contact"
       `}
         templateColumns={`repeat(3, 1fr)`}
       >
@@ -26,8 +28,19 @@ function App() {
             <Hero />
           </CenteredBox>
         </GridItem>
-        <GridItem bg="gray" area="main">
-          <CenteredBox>Main</CenteredBox>
+        <GridItem bg="gray" area="projects">
+          <CenteredBox>Projects</CenteredBox>
+        </GridItem>
+        <GridItem bg="orange" area="credentials">
+          <CenteredBox>Credentials</CenteredBox>
+        </GridItem>
+        <GridItem bg="green" area="about">
+          <CenteredBox>About</CenteredBox>
+        </GridItem>
+        <GridItem area="contact">
+          <CenteredBox>
+            <Contact />
+          </CenteredBox>
         </GridItem>
       </Grid>
     </>
@@ -35,3 +48,5 @@ function App() {
 }
 
 export default App;
+
+// This project uses: React, Typescript, ChakraUI, EmailJS

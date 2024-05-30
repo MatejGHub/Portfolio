@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import CenteredBox from "./styles/BoxStyles"; //Styles to center the content
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         "credentials credentials credentials"
         "about about about"
         "contact contact contact"
+        "footer footer footer "
       `}
         templateColumns={`repeat(3, 1fr)`}
       >
@@ -40,6 +42,11 @@ function App() {
         <GridItem area="contact">
           <CenteredBox>
             <Contact />
+          </CenteredBox>
+        </GridItem>
+        <GridItem area="footer">
+          <CenteredBox>
+            <Footer />
           </CenteredBox>
         </GridItem>
       </Grid>

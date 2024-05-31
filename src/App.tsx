@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import CenteredBox from "./styles/BoxStyles"; //Styles to center the content
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
   return (
@@ -36,8 +37,10 @@ function App() {
         <GridItem bg="orange" area="credentials">
           <CenteredBox>Credentials</CenteredBox>
         </GridItem>
-        <GridItem bg="green" area="about">
-          <CenteredBox>About</CenteredBox>
+        <GridItem area="about">
+          <CenteredBox>
+            <About />
+          </CenteredBox>
         </GridItem>
         <GridItem area="contact">
           <CenteredBox>

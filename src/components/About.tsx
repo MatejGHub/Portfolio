@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
       <Box p={5} textAlign="center">
-        <Heading fontSize="6xl" fontWeight="bold">
+        <Heading fontSize={isLargerThanSM ? "6xl" : "4xl"} fontWeight="bold">
           About me
         </Heading>
         <Text>Have a peek at some other information about me</Text>

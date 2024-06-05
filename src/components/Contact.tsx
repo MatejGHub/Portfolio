@@ -15,7 +15,7 @@ const Contact = () => {
   const { isLargerThanMD, isLargerThanSM } = useResponsive();
   return (
     <>
-      <Box textAlign={"center"} marginY={"40px"}>
+      <Box textAlign={"center"} marginY={"40px"} id="contact">
         <Text
           fontSize={isLargerThanSM ? "6xl" : "4xl"}
           fontWeight="bold"

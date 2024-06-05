@@ -5,8 +5,7 @@ import {
   HStack,
   Heading,
   Link,
-  useColorMode,
-  useMediaQuery
+  useColorMode
 } from "@chakra-ui/react";
 import React from "react";
 import { FaLocationDot, FaDownload } from "react-icons/fa6";
@@ -58,7 +57,7 @@ const ContactGeneral = () => {
           <LinkItem href="https://www.google.com/maps/place/Volča,+Slovenia">
             <FaLocationDot fontSize="35px" />
           </LinkItem>
-          <AnimatedUnderline>Volča, Slovenia - Open to work</AnimatedUnderline>
+          <AnimatedUnderline>Volča, Slovenia</AnimatedUnderline>
         </HStack>
         <Divider />
         <HStack marginTop={4}>

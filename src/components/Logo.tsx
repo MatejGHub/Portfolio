@@ -10,7 +10,7 @@ const Logo = () => {
     <HStack>
       <Box as={PiGitlabLogoSimpleFill} fontSize={bigTitle} />
       <Heading as="h1" size={text} fontWeight="bold">
-        Portfolio
+        Portfolio12321312
       </Heading>
     </HStack>
   );

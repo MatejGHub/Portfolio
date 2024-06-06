@@ -7,39 +7,109 @@ import {
   MenuButton,
   MenuList,
   Button,
-  MenuItem
+  MenuItem,
+  Box
 } from "@chakra-ui/react";
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import useResponsive from "../hooks/useResponsive";
+import { useTextStyles } from "../styles/TextStyles";
+import { Link } from "react-scroll";
+import AnimatedUnderline from "../styles/AnimatedUnderline";
 
 const MenuItems = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-
-  const { isLargerThanSM, isLargerThanMD } = useResponsive();
+  const { isLargerThanMD } = useResponsive();
+  const { title } = useTextStyles();
 
   return (
-    <HStack>
+    <HStack gap={5}>
       {isLargerThanMD ? (
         <>
-          <Switch
-            colorScheme="green"
-            size="lg"
-            isChecked={colorMode === "dark"}
-            onChange={toggleColorMode}
-          />
-          <Text fontSize="sm" fontWeight="bold">
-            {colorMode === "dark" ? "Dark Mode" : "Light Mode"}
-          </Text>
+          <AnimatedUnderline>
+            <Box
+              as={Link}
+              to="projects"
+              smooth={true}
+              duration={500}
+              cursor="pointer"
+            >
+              Projects
+            </Box>
+          </AnimatedUnderline>
+          <AnimatedUnderline>
+            <Box
+              as={Link}
+              to="about"
+              smooth={true}
+              duration={500}
+              cursor="pointer"
+            >
+              About
+            </Box>
+          </AnimatedUnderline>
+          <AnimatedUnderline>
+            <Box
+              as={Link}
+              to="contact"
+              smooth={true}
+              duration={500}
+              cursor="pointer"
+            >
+              Contact
+            </Box>
+          </AnimatedUnderline>
+
+          <HStack>
+            <Switch
+              colorScheme="green"
+              size="lg"
+              isChecked={colorMode === "dark"}
+              onChange={toggleColorMode}
+            />
+            <Text fontSize="sm" fontWeight="bold">
+              {colorMode === "dark" ? "Dark Mode" : "Light Mode"}
+            </Text>
+          </HStack>
         </>
       ) : (
         <Menu>
           <MenuButton as={Button}>
-            <RxHamburgerMenu fontSize={isLargerThanSM ? "35px" : "20px"} />
+            <RxHamburgerMenu fontSize={title} />
           </MenuButton>
           <MenuList>
             <MenuItem>
-              <p>123</p>
+              <Box
+                as={Link}
+                to="projects"
+                smooth={true}
+                duration={500}
+                cursor="pointer"
+              >
+                Projects
+              </Box>
+            </MenuItem>
+            <MenuItem>
+              <Box
+                as={Link}
+                to="about"
+                smooth={true}
+                duration={500}
+                cursor="pointer"
+              >
+                About
+              </Box>
+            </MenuItem>
+            <MenuItem>
+              <Box
+                as={Link}
+                to="contact"
+                smooth={true}
+                duration={500}
+                cursor="pointer"
+              >
+                Contact
+              </Box>
             </MenuItem>
             <MenuItem>
               <HStack justifyContent={"center"} marginRight={3}>

@@ -1,7 +1,6 @@
 import { SimpleGrid, Button } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-scroll";
-import Projects from "./Projects";
 
 const HeroSkipToContent = () => {
   const columns = { base: 1, md: 3 };

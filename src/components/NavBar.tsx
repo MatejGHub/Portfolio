@@ -11,12 +11,9 @@ import useResponsive from "../hooks/useResponsive";
 
 const NavBar = () => {
   const bgColor = useBreakpointValue({
-    base: "transparent",
     md: useColorModeValue("gray.100", "gray.700")
   });
-
   const { isLargerThanSM } = useResponsive();
-
   return (
     <Box
       as="nav"

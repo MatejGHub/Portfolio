@@ -1,19 +1,15 @@
-import { Box, HStack, Heading, useBreakpointValue } from "@chakra-ui/react";
+import { Box, HStack, Heading } from "@chakra-ui/react";
 import { PiGitlabLogoSimpleFill } from "react-icons/pi";
-
 import React from "react";
-import useResponsive from "../hooks/useResponsive";
+import { useTextStyles } from "../styles/TextStyles";
 
 const Logo = () => {
-  const { isLargerThanSM } = useResponsive();
+  const { text, bigTitle } = useTextStyles();
 
   return (
     <HStack>
-      <Box
-        as={PiGitlabLogoSimpleFill}
-        fontSize={isLargerThanSM ? "50px" : "30px"}
-      />
-      <Heading as="h1" size={isLargerThanSM ? "xl" : "lg"} fontWeight="bold">
+      <Box as={PiGitlabLogoSimpleFill} fontSize={bigTitle} />
+      <Heading as="h1" size={text} fontWeight="bold">
         Portfolio
       </Heading>
     </HStack>

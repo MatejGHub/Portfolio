@@ -15,6 +15,7 @@ function App() {
   const [refProjects, inViewProjects] = useInView({ triggerOnce: true });
   const [refAbout, inViewAbout] = useInView({ triggerOnce: true });
   const [refContact, inViewContact] = useInView({ triggerOnce: true });
+
   return (
     <>
       <Grid

@@ -14,7 +14,6 @@ const Projects = () => {
           Projects showcase
         </Heading>
         <ProjectsData />
-        <OtherProjects />
       </Box>
     </>
   );

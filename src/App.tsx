@@ -61,9 +61,7 @@ function App() {
             <Projects />
           </CenteredBox>
         </GridItem>
-        <GridItem bg="orange" area="credentials">
-          <CenteredBox>Credentials</CenteredBox>
-        </GridItem>
+
         <GridItem
           ref={refAbout}
           style={{

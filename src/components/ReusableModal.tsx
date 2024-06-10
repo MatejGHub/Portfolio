@@ -1,5 +1,6 @@
 import {
   Button,
+  Link,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -10,6 +11,7 @@ import {
   useDisclosure
 } from "@chakra-ui/react";
 import React from "react";
+import LinkItem from "../LinkItem";
 
 interface ModalProps {
   buttonLabel: string;
@@ -41,7 +43,9 @@ function ModalComponent({
             <Button colorScheme="blue" mr={3} onClick={onClose}>
               Close
             </Button>
-            <Button variant="ghost">Contact me</Button>
+            <Link href="#contact" onClick={onClose}>
+              <Button variant="ghost">Contact me</Button>
+            </Link>
           </ModalFooter>
         </ModalContent>
       </Modal>

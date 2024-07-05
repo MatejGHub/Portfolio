@@ -1,16 +1,11 @@
-import {
-  Box,
-  useBreakpointValue,
-  Text,
-  Center,
-  HStack
-} from "@chakra-ui/react";
+import { Box, Text, Center, HStack, Link } from "@chakra-ui/react";
 import React from "react";
 import { useTextStyles } from "../styles/TextStyles";
 import SocialLinks from "./SocialLinks";
 import { FaLocationDot } from "react-icons/fa6";
 import LinkItem from "../LinkItem";
 import AnimatedUnderline from "../styles/AnimatedUnderline";
+import { IoIosMail } from "react-icons/io";
 
 const HeroMessage = () => {
   const { subtitle, text, bigTitle } = useTextStyles();
@@ -23,6 +18,9 @@ const HeroMessage = () => {
         </Text>
 
         <HStack marginBottom={2}>
+          <Link href="mailto:matej.stremfelj26@gmail.com" isExternal>
+            <IoIosMail fontSize="45px" style={{ cursor: "pointer" }} />
+          </Link>
           <SocialLinks />
         </HStack>
         <HStack marginBottom={2}>

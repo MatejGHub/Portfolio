@@ -33,6 +33,7 @@ const MenuItems = () => {
               smooth={true}
               duration={500}
               cursor="pointer"
+              fontWeight={"bold"}
             >
               Projects
             </Box>
@@ -44,6 +45,7 @@ const MenuItems = () => {
               smooth={true}
               duration={500}
               cursor="pointer"
+              fontWeight={"bold"}
             >
               About
             </Box>
@@ -55,6 +57,7 @@ const MenuItems = () => {
               smooth={true}
               duration={500}
               cursor="pointer"
+              fontWeight={"bold"}
             >
               Contact
             </Box>

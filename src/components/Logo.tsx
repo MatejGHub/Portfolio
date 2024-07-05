@@ -1,5 +1,5 @@
 import { Box, HStack, Heading } from "@chakra-ui/react";
-import { PiGitlabLogoSimpleFill } from "react-icons/pi";
+import { IoCodeWorkingOutline } from "react-icons/io5";
 import React from "react";
 import { useTextStyles } from "../styles/TextStyles";
 
@@ -8,9 +8,9 @@ const Logo = () => {
 
   return (
     <HStack>
-      <Box as={PiGitlabLogoSimpleFill} fontSize={bigTitle} />
+      <Box as={IoCodeWorkingOutline} fontSize={bigTitle} />
       <Heading as="h1" size={text} fontWeight="bold">
-        Portfolio
+        Matej Štremfelj
       </Heading>
     </HStack>
   );

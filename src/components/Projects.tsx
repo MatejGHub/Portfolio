@@ -1,8 +1,9 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import useResponsive from "../hooks/useResponsive";
 import ProjectsData from "./ProjectsData";
 import OtherProjects from "./OtherProjects";
+import { useTextStyles } from "../styles/TextStyles";
 
 const Projects = () => {
   const { isLargerThanSM } = useResponsive();
@@ -14,6 +15,7 @@ const Projects = () => {
           Projects showcase
         </Heading>
         <ProjectsData />
+        <Text fontSize={"5xl"}>...</Text>
       </Box>
     </>
   );

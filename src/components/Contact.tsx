@@ -1,10 +1,4 @@
-import {
-  Box,
-  SimpleGrid,
-  Text,
-  useBreakpointValue,
-  useMediaQuery
-} from "@chakra-ui/react";
+import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 
 import React from "react";
 import ContactGeneral from "./ContactGeneral";

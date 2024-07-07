@@ -23,13 +23,14 @@ const ProjectCard = ({ project, isRight }) => {
       textAlign="left"
       maxWidth="1000px"
       alignItems="center"
+      my={5}
     >
       <Box
         borderRadius="lg"
         overflow="hidden"
         width={isLargerThanSM ? "200%" : "95%"}
       >
-        <video loop controls width="100%">
+        <video controls width="100%">
           <source src={project.video} type="video/mp4" />
         </video>
       </Box>

@@ -2,7 +2,6 @@ import React from "react";
 import ProjectCard from "./ProjectsTemplateReusable";
 import GameHubVideo from "../assets/projects/GameHub.mp4";
 import WeatherApp from "../assets/projects/WeatherApp.mp4";
-import DeweHoist from "../assets/projects/DeweHoist.mp4";
 
 const projects = [
   {
@@ -22,14 +21,6 @@ const projects = [
     technologies: "React, Typescript, TailwindCSS",
     video: WeatherApp,
     link: "https://weather-ezgj0d55z-matejs-projects-a4d93d99.vercel.app/"
-  },
-  {
-    id: 3,
-    title: "DeweHoist",
-    description: "A beautiful landing page created by using TailwindCSS",
-    technologies: "TailwindCSS, React, Typescript",
-    video: DeweHoist,
-    link: "https://dewe-hoist-git-master-matejs-projects-a4d93d99.vercel.app/"
   }
 ];
 

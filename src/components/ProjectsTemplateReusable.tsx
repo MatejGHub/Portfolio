@@ -28,9 +28,9 @@ const ProjectCard = ({ project, isRight }) => {
       <Box
         borderRadius="lg"
         overflow="hidden"
-        width={isLargerThanSM ? "200%" : "95%"}
+        width={isLargerThanSM ? "80%" : "50%"}
       >
-        <video controls width="100%">
+        <video controls>
           <source src={project.video} type="video/mp4" />
         </video>
       </Box>

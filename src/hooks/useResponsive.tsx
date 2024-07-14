@@ -1,5 +1,4 @@
 import { useMediaQuery } from "@chakra-ui/react";
-import React from "react";
 
 const useResponsive = () => {
   const [isLargerThanMD] = useMediaQuery("(min-width: 778px)");

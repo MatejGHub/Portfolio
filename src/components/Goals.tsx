@@ -4,18 +4,13 @@ import ReusableModal from "./ReusableModal";
 function Goals() {
   return (
     <ReusableModal buttonLabel="Goals" header="Goals" scrollBehavior="inside">
-      My primary goal in programming is to excel in Front-End development and
-      secure a job.
+      My goal in programming is to become a well-rounded developer.
       <br /> <br />
-      Once I land a front-end development job, my next step is to continually
-      expand my expertise. I aspire to deepen my front-end skills while
-      gradually incorporating more back-end knowledge. My goal is to grow into a
-      well-rounded developer.
+      I am dedicated to making this happen. Commited to learning and growing in
+      this field.
       <br /> <br />
-      I am dedicated to keeping up with the latest advancements in web
-      technology. My goal is to excel in the web development field, constantly
-      challenging myself to improve and make significant contributions to the
-      industry.
+      My goal is to excel in the web development field, constantly challenging
+      myself to improve and make significant contributions to the industry.
       <br /> <br />
     </ReusableModal>
   );

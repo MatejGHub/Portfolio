@@ -4,11 +4,11 @@ import ReusableModal from "./ReusableModal";
 function Introduction() {
   return (
     <ReusableModal buttonLabel="Introduction" header="Introduction">
-      My name is Matej Štremfelj, a 28-year-old from Poljane nad Škofjo Loko.
-      With a lifelong passion for computers, I decided to focus on programming
-      over the past year. I've honed my skills in HTML, CSS, JavaScript,
-      TypeScript, React JS, and Git, and I'm also exploring SCSS, Bootstrap,
-      ChakraUI, Tailwind, and NodeJS.
+      I am Matej Štremfelj, a self-taugh web developer. With a lifelong passion
+      for computers. I am interested in opportunities in web development. So far
+      I have gained a lot of practical experience through projects. I've honed
+      my skills in React, Typescript, Javascript, Node JS, Git, Wordpress,
+      TailwindCSS, mongoDB, mySQL. I continue to grow in this field every day.
       <br />
       <br /> I'm driven by a love for learning and challenges, thriving in team
       environments, and bringing a positive, organized approach to

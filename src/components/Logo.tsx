@@ -8,7 +8,12 @@ const Logo = () => {
 
   return (
     <HStack>
-      <Box as={IoCodeWorkingOutline} fontSize={bigTitle} />
+      <Box
+        as={IoCodeWorkingOutline}
+        fontSize={bigTitle}
+        transition={"transform 0.5s ease-in-out"}
+        _hover={{ transform: "rotate(180deg)" }}
+      />
       <Heading as="h1" size={text} fontWeight="bold">
         Matej Štremfelj
       </Heading>

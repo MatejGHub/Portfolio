@@ -63,17 +63,17 @@ const ContactGeneral = () => {
         <HStack marginTop={4}>
           <FaDownload fontSize="30px" />
           <Link
-            href="https://docs.google.com/document/d/1-NNsdX8HrvpSZbZnAF_cgoUGcTZuk4L2oVk3FCGouzk/export?format=pdf"
+            href="https://docs.google.com/document/d/1-NNsdX8HrvpSZbZnAF_cgoUGcTZuk4L2oVk3FCGouzk/edit?usp=sharing"
             download
           >
             <Button>CV</Button>
           </Link>
-          <Link
+          {/* <Link
             href="https://docs.google.com/document/d/1xXy4aPWNrU3L2IAGsTs1AcKSsTj_nLI6AusXQNMTsjs/export?format=pdf"
             download
           >
             <Button>Motivational Letter</Button>
-          </Link>
+          </Link> */}
         </HStack>
       </Box>
     </>

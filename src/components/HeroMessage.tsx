@@ -30,11 +30,9 @@ const HeroMessage = () => {
           <AnimatedUnderline>Volča, Slovenia</AnimatedUnderline>
         </HStack>
 
-        <Text fontSize={text}>
-          A front-end software engineer focused on crafting accessible and
-          performant experiences on the web. With a keen eye for detail and a
-          passion for learning, I am always searching for ways to improve the
-          quality of the web for everyone.
+        <Text style={{ paddingBottom: "20px" }} fontSize={text}>
+          A self-taught programmer focused on crafting performant websites with
+          a keen eye for detail and a passion for learning.
         </Text>
       </Box>
     </Center>

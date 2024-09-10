@@ -9,8 +9,9 @@ function Goals() {
       I am dedicated to making this happen. Commited to learning and growing in
       this field.
       <br /> <br />
-      My goal is to excel in the web development field, constantly challenging
-      myself to improve and make significant contributions to the industry.
+      Excel in the web development field is what I strive to do, constantly
+      challenging myself to improve and make significant contributions to the
+      industry.
       <br /> <br />
     </ReusableModal>
   );

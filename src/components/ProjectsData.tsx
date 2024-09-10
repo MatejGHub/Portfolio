@@ -9,7 +9,7 @@ const projects = [
     title: "Game Hub",
     description:
       "Game Hub is a responsive web application showcasing my skills with APIs. It fetches an array of over 800.000 games and displays them and their data. The user can search for games, filter them by genre, sort them by platform and more.",
-    technologies: "React, Typescript, SCSS, Axios",
+    technologies: "React, Typescript, SCSS",
     video: GameHubVideo,
     link: "https://game-hub-flame-five.vercel.app/"
   },

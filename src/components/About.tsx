@@ -41,10 +41,16 @@ const About = () => {
           backgroundColor="rgba(0, 0, 0, 0.15)"
           zIndex="-1"
         />
-        <Heading fontSize={isLargerThanSM ? "6xl" : "4xl"} fontWeight="bold">
+        <Heading
+          fontSize={isLargerThanSM ? "6xl" : "4xl"}
+          fontWeight="bold"
+          style={{ color: "white" }}
+        >
           About me
         </Heading>
-        <Text>Have a peek at some other information about me</Text>
+        <Text style={{ color: "white" }}>
+          Have a peek at some other information about me
+        </Text>
         <SimpleGrid
           columns={isLargerThanMD ? 3 : isLargerThanSM ? 2 : 1}
           spacing={5}
@@ -54,7 +60,6 @@ const About = () => {
           <Education />
           <Expertise />
           <Goals />
-          <ProjectsDetails />
         </SimpleGrid>
       </Box>
     </>
